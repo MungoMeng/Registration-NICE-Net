@@ -114,7 +114,7 @@ if __name__ == "__main__":
     parser.add_argument("--device", type=str, default='gpu',
                         dest="device", help="cpu or gpu")
     parser.add_argument("--epochs", type=int,
-                        dest="epochs", default=150,
+                        dest="epochs", default=100,
                         help="number of epoch")
     parser.add_argument("--steps_per_epoch", type=int,
                         dest="steps_per_epoch", default=1000,

@@ -74,7 +74,6 @@ def pairs_gen(path, pairs, batch_size=1, random=True):
 def load_example_by_name(vol_name):
     """
     load a specific volume and segmentation
-
     np_var: specify the name of the variable in numpy files, if your data is stored in 
         npz files. default to 'vol_data'
     """
@@ -92,10 +91,10 @@ def load_example_by_name(vol_name):
 
 def load_volfile(datafile, np_var):
     """
-     load volume file
-     formats: nii, nii.gz, mgz, npz
-     if it's a npz (compressed numpy), variable names innp_var (default: 'vol_data')
-     """
+    load volume file
+    formats: nii, nii.gz, mgz, npz
+    if it's a npz (compressed numpy), variable names innp_var (default: 'vol_data')
+    """
     assert datafile.endswith(('.nii', '.nii.gz', '.mgz', '.npz')), 'Unknown data file'
 
     if datafile.endswith(('.nii', '.nii.gz', '.mgz')):

@@ -5,8 +5,8 @@ import numpy as np
 
 class NCC():
     """
-     local (over window) normalized cross correlation
-     """
+    local (over window) normalized cross correlation
+    """
 
     def __init__(self, win=9, eps=1e-5):
         self.win = win

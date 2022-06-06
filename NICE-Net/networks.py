@@ -16,6 +16,7 @@ import neuron.layers as nrn_layers
 import losses
 
 
+# Registration step L=5
 def NICE_Net_L5(vol_size, channels=1):
     
     # inputs
@@ -126,8 +127,9 @@ def NICE_Net_L5(vol_size, channels=1):
     return Model(inputs=[fixed, moving, mov_down_2, mov_down_4, mov_down_8, mov_down_16], outputs=[flow_1, warped_moving_1, flow_2, warped_moving_2, flow_3, warped_moving_3, flow_4, warped_moving_4, flow_5, warped_moving_5])
 
 
+# Registration step L=4
 def NICE_Net_L4(vol_size, channels=1):
-    
+
     # inputs
     fixed = Input(shape=[*vol_size, channels])
     moving = Input(shape=[*vol_size, channels])
@@ -219,8 +221,9 @@ def NICE_Net_L4(vol_size, channels=1):
     return Model(inputs=[fixed, moving, mov_down_2, mov_down_4, mov_down_8], outputs=[flow_1, warped_moving_1, flow_2, warped_moving_2, flow_3, warped_moving_3, flow_4, warped_moving_4])
 
 
+# Registration step L=3
 def NICE_Net_L3(vol_size, channels=1):
-    
+
     # inputs
     fixed = Input(shape=[*vol_size, channels])
     moving = Input(shape=[*vol_size, channels])
@@ -296,8 +299,9 @@ def NICE_Net_L3(vol_size, channels=1):
     return Model(inputs=[fixed, moving, mov_down_2, mov_down_4], outputs=[flow_1, warped_moving_1, flow_2, warped_moving_2, flow_3, warped_moving_3])
 
 
+# Registration step L=2
 def NICE_Net_L2(vol_size, channels=1):
-    
+
     # inputs
     fixed = Input(shape=[*vol_size, channels])
     moving = Input(shape=[*vol_size, channels])
@@ -357,7 +361,7 @@ def NICE_Net_L2(vol_size, channels=1):
     return Model(inputs=[fixed, moving, mov_down_2], outputs=[flow_1, warped_moving_1, flow_2, warped_moving_2])
 
 
-#When registration step L=1, NICE-Net is degraded as a baseline registration network without coarse-to-fine registration.
+# Registration step L=1, NICE-Net is degraded as a baseline network without performing coarse-to-fine registration.
 def NICE_Net_L1(vol_size, channels=1):
     
     # inputs

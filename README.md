@@ -7,4 +7,4 @@ In this study, we propose a Non-Iterative Coarse-to-finE registration Network (N
 
 ## Publication
 If this repository helps your work, please kindly cite our paper:
-* **Mingyuan Meng, Lei Bi, David Dagan Feng, Jinman Kim, "Non-iterative Coarse-to-fine Registration based on Single-pass Deep Cumulative Learning," International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), 2022. [[arXiv](https://arxiv.org/abs/2206.12596)]**
+* **Mingyuan Meng, Lei Bi, Dagan Feng, Jinman Kim, "Non-iterative Coarse-to-fine Registration based on Single-pass Deep Cumulative Learning," International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), 2022. [[arXiv](https://arxiv.org/abs/2206.12596)]**

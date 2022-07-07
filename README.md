@@ -1,4 +1,4 @@
-# NICE-Net: a Non-Iterative Coarse-to-finE registration Network (NICE-Net) for deformable image registration
+# NICE-Net: a Non-Iterative Coarse-to-finE registration Network for deformable image registration
 In this study, we propose a Non-Iterative Coarse-to-finE registration Network (NICE-Net) for deformable registration. In the NICE-Net, we propose: (i) a Single-pass Deep Cumulative Learning (SDCL) decoder that can cumulatively learn coarse-to-fine transformations within a single pass (iteration) of the network, and (ii) a Selectively-propagated Feature Learning (SFL) encoder that can learn common image features for the whole coarse-to-fine registration process and selectively propagate the features as needed. Extensive experiments on six public datasets of 3D brain Magnetic Resonance Imaging (MRI) show that our proposed NICE-Net can outperform state-of-the-art iterative deep registration methods while only requiring similar runtime to non-iterative methods.  
 **For more details, please refer to our paper. [[arXiv](https://arxiv.org/abs/2206.12596)]**
 

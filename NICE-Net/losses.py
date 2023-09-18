@@ -29,7 +29,6 @@ class NCC():
 
         # compute filters
         sum_filt = tf.ones([*self.win, 1, 1])
-        strides = 1
         strides = [1] * (ndims + 2)
         padding = 'SAME'
 
